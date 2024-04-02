@@ -1,5 +1,3 @@
-// Author: DeeKay Goswami
-
 #include <iostream>
 #include "rclcpp/rclcpp.hpp"
 #include "rclcpp/parameter.hpp"

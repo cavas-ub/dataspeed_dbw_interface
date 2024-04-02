@@ -9,8 +9,8 @@ def load_parameters_from_yaml(yaml_file):
     return parameters
 
 def generate_launch_description():
-    package_name = 'universe_dbw_bridge'
-    executable_name = 'Lincoln_MKZ_Bridge'
+    package_name = 'dataspeed_dbw_interface'
+    executable_name = 'Dataspeed_DBW_Interface'
 
     launch_file_dir = os.path.dirname(__file__)
 

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(universe_dbw_bridge)
+project(dataspeed_dbw_interface)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -13,11 +13,11 @@ find_package(autoware_auto_control_msgs REQUIRED)
 find_package(dbw_ford_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 
-add_executable(Lincoln_MKZ_Bridge src/Lincoln_MKZ_Bridge.cpp)
-ament_target_dependencies(Lincoln_MKZ_Bridge rclcpp autoware_auto_vehicle_msgs autoware_auto_control_msgs dbw_ford_msgs sensor_msgs)
+add_executable(dataspeed_dbw_interface src/dataspeed_dbw_interface.cpp)
+ament_target_dependencies(dataspeed_dbw_interface rclcpp autoware_auto_vehicle_msgs autoware_auto_control_msgs dbw_ford_msgs sensor_msgs)
 
 install(TARGETS
-  Lincoln_MKZ_Bridge
+  dataspeed_dbw_interface
   DESTINATION lib/${PROJECT_NAME})
 
 # Install config and launch folders
